@@ -1,2 +1,2 @@
 # akaanatta.github.io
-Personal website
+personal website
