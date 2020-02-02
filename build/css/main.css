@@ -1,0 +1,215 @@
+body {
+	margin:0;
+	padding:0;
+	background:#151515 url("../images/bkg.png") 0 0;
+	color:#539be8;
+	font-size:16px;
+	line-height:1.5;
+	font-family: "Lucida Console", Ubuntu Mono, Terminal, monospace
+}
+
+.container {
+	width:90%;
+	max-width:1000px;
+	margin:0 auto
+}
+
+section {
+	display:block;
+	margin:0 0 20px 0
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin:0 0 20px
+}
+
+li {
+	line-height:1.4;
+}
+
+header {
+	background:rgba(0,0,0,0.1);
+	width:100%;
+	border-bottom:1px solid #24b129;
+	padding:10px 0;
+	margin:0 0 30px 0
+}
+
+header h1 {
+	font-size:30px;
+	line-height:1.5;
+	margin:0 0 10px -40px;
+	font-weight:bold;
+	font-family:Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+	color:#24b129;
+	text-shadow:0 1px 1px rgba(0,0,0,0.1),0 0 5px rgba(181,232,83,0.1),0 0 10px rgba(181,232,83,0.1);
+	letter-spacing:-1px;
+	-webkit-font-smoothing:antialiased
+}
+
+header h1:before {
+	content:"./ ";font-size:24px
+}
+
+header h2 {
+	font-size:18px;
+	font-weight:300;
+	color:#fff;
+}
+
+.btn {
+	display:inline-block;
+	text-align:center;
+	margin:0
+}
+
+#main_content {
+	width:100%;
+	-webkit-font-smoothing:antialiased
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight:normal;
+	font-family:Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+	color:#e85353;
+	letter-spacing:-0.03em;
+	text-shadow:0 1px 1px rgba(0,0,0,0.1),0 0 5px rgba(181,232,83,0.1),0 0 10px rgba(181,232,83,0.1)
+}
+
+code.highlighter-rouge {
+	background:rgba(0,0,0,0.9);
+	border:1px solid rgba(255,255,255,0.15);
+	padding:0px 3px;
+	margin:0px -3px;
+	color:#aaa;
+	border-radius:2px
+}
+
+a {
+	color:#539be8;
+	text-shadow:0 0 5px rgba(104,182,255,0.5)
+}
+
+.cf:before,.cf:after {
+	content:"";
+	display:table
+	}
+
+.cf:after {
+	clear:both
+}
+
+.cf {
+	zoom:1
+}
+
+#main_content h1 {
+	font-size:30px;
+}
+#main_content h2 {
+	font-size:24px
+}
+#main_content h3 {
+	font-size:18px
+}
+#main_content h4 {
+	font-size:14px
+}
+#main_content h5 {
+	font-size:12px;
+	text-transform:uppercase;
+	margin:0 0 5px 0}
+
+#main_content h6 {
+	font-size:12px;
+	text-transform:uppercase;
+	color:#999;
+	margin:0 0 5px 0
+}
+
+dt {
+font-style:italic;
+font-weight:bold
+}
+
+ul li {
+	list-style-image:url("../images/bullet.png")
+}
+
+blockquote {
+	color:#yellow;
+	padding-left:10px;
+	border-left:1px dotted #666}
+
+pre {
+	background:rgba(0,0,0,0.9);
+	border:1px solid rgba(255,255,255,0.15);
+	padding:10px;
+	font-size:16px;
+	color:#bbb;
+	border-radius:2px;
+	word-wrap:normal;
+	overflow:auto;
+	overflow-y:hidden
+}
+
+table {
+	width:100%;
+	margin:0 0 20px 0
+}
+
+th {
+	text-align:left;
+	border-bottom:1px dafff;
+	padding:5px 10px
+}
+
+td {
+	padding:5px 10px
+}
+hr {height:0;
+	border:0;
+	border-bottom:1px dashed red;color:#fff
+}
+
+.btn {
+	display:inline-block;
+	background:-webkit-linear-gradient(top, rgba(40,40,40,0.3), rgba(35,35,35,0.3) 50%, rgba(10,10,10,0.3) 50%, rgba(0,0,0,0.3));
+	padding:8px 18px;
+	margin-bottom: -10px;
+	border-radius:50px;
+	border:2px solid rgba(0,0,0,0.7);
+	border-bottom:2px solid rgba(0,0,0,0.7);
+	border-top:2px solid #000;
+	color:#e85353;
+	font-family:Helvetica, Arial, sans-serif;
+	font-weight:bold;
+	font-size:13px;
+	text-decoration:none;
+	text-shadow:0 -1px 0 rgba(0,0,0,0.75);
+	box-shadow:inset 0 1px 0 rgba(255,255,255,0.05)
+}
+
+.btn:hover {
+	background:-webkit-linear-gradient(top, rgba(40,40,40,0.6), rgba(35,35,35,0.6) 50%, rgba(10,10,10,0.8) 50%, rgba(0,0,0,0.8))
+}
+
+.btn .icon {
+	display:inline-block;
+	width:16px;
+	height:16px;
+	margin:1px 8px 0 0;
+	float:left
+}
+
+.btn-github .icon {
+	opacity:0.6;background:url("../images/blackocat.png") 0 0 no-repeat
+}
+
+h2 {
+	color:#b9b92d;
+	text-transform: uppercase;
+	padding: 10px;
+}
+
+
