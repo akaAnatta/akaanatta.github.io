@@ -1,0 +1,23 @@
+{
+  "name": "akaanatta.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akaAnatta/akaanatta.github.io.git"
+  },
+  "author": "anatta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akaAnatta/akaanatta.github.io/issues"
+  },
+  "homepage": "https://github.com/akaAnatta/akaanatta.github.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.2.0"
+  }
+}
