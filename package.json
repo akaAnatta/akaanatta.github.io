@@ -1,7 +1,7 @@
 {
   "name": "akaanatta.github.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "personal website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,14 +10,20 @@
     "type": "git",
     "url": "git+https://github.com/akaAnatta/akaanatta.github.io.git"
   },
-  "author": "anatta",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/akaAnatta/akaanatta.github.io/issues"
   },
   "homepage": "https://github.com/akaAnatta/akaanatta.github.io#readme",
   "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
     "gulp": "^4.0.2",
-    "gulp-cli": "^2.2.0"
-  }
+    "gulp-imagemin": "^7.1.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-bulk-import": "^1.0.1"
+  },
+  "dependencies": {}
 }
