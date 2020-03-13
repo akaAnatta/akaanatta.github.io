@@ -1,4 +1,4 @@
-// for gulp>v.4
+// for gulp>v.4. Don't forget to install all plugins
 
 'use strict';
  
@@ -11,8 +11,8 @@ var del = require('del'); // to delete folder
 var imagemin = require('gulp-imagemin'); //minification of images
 
 // Pug task
-gulp.task('pug', function() {
-  return gulp.src('src/pug/index.pug')
+gulp.task('pug', function() { // Declare task
+  return gulp.src('src/pug/index.pug') // Find .files in folder
     .pipe(pug({
       pretty:true
     }))
@@ -25,14 +25,14 @@ gulp.task('sass', function(cb) {
     .pipe(bulkSass())
     .pipe(sass()) // Using gulp-sass
     .pipe(gulp.dest('build/css'))
-	cb();
+	cb(); // !Callback way to finish task
 });
 
 // Static Server + watching changes in html/css/sass files + reload
 gulp.task('serve', function() {
 	//starting a server and point folder to watch
     browserSync.init({
-        server: "./"
+        server: './'
     });
 	//start page reloading after changes in html/css/sass
     gulp.watch('*.html').on('change', browserSync.reload);
@@ -66,5 +66,5 @@ gulp.task('compress', function(cb) {
 // Default Task
 gulp.task('default', gulp.series(
   'sass', 'pug', 'clean', 'compress',
-  gulp.parallel('serve', 'watch')
+  gulp.parallel('watch', 'serve')
 ));
