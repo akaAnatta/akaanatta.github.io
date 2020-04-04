@@ -1,0 +1,55 @@
+.header {
+	background: rgba(0,0,0,0.1);
+	width: 100%;
+	padding: 0.625rem 0;
+	margin: 0 0 1.875rem 0;
+	border-bottom: 1px solid #24b129;
+}
+
+.main-title {
+	font-family: "Bitstream Vera Sans Mono", "Monaco";
+	font-size: 1.875rem;
+	line-height: 1.9;
+	font-weight: bold;
+	color: #24b129;
+	letter-spacing: -1px;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.1),0 0 5px rgba(181,232,83,0.1),0 0 10px rgba(181,232,83,0.1);
+	margin: 0.5em 0 0.33em -1.33rem;
+}
+
+.main-title:before {
+	content: "./";
+	font-size: 0.8em;
+}
+
+.downloads {
+	display: block;
+	margin: 0 0 1.25rem 0;
+}
+
+.downloads__btn {
+	background:-webkit-linear-gradient(top, rgba(40,40,40,0.3), rgba(35,35,35,0.3) 50%, rgba(10,10,10,0.3) 50%, rgba(0,0,0,0.3));
+	padding: 0.66em 1.12rem;
+	border-radius: 50px;
+	border: 2px solid rgba(0,0,0,0.7);
+	color: #e85353;
+	font-family: "Bitstream Vera Sans Mono", "Monaco", sans-serif;
+	font-weight: bold;
+	font-size: 0.81rem;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.75);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+.downloads__btn:hover {
+	background:-webkit-linear-gradient(top, rgba(40,40,40,0.6), rgba(35,35,35,0.6) 50%, rgba(10,10,10,0.8) 50%, rgba(0,0,0,0.8))
+}
+
+.downloads__icon {
+	background-image: url("../img/icon2.png");
+	background-size: contain;
+	width: 17px;
+	height: 17px;
+	margin:1px 8px 0 0;
+	float: left;
+	opacity: 0.3;
+}

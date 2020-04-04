@@ -6,13 +6,16 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var pug = require('gulp-pug');
-var bulkSass = require('gulp-sass-bulk-import'); // let use the subfolders when @import in .scss file
+var bulkSass = require('gulp-sass-bulk-import'); // let use the contents of the subfolders with * 
 var del = require('del'); // to delete folder
-var imagemin = require('gulp-imagemin'); //minification of images
+var imagemin = require('gulp-imagemin'); // minification of images
+var postcss = require('gulp-postcss'); // transforming styles with JS plugins:
+var cssimport = require('postcss-import'); // changing file from @import links to its content 
+var autoprefixer = require('autoprefixer'); // postcss autoprefixer
 
 // Pug task
-gulp.task('pug', function() { // Declare task
-  return gulp.src('src/pug/index.pug') // Find .files in folder
+gulp.task('pug', function() { // declare task
+  return gulp.src('src/pug/index.pug') // find .files in folder
     .pipe(pug({
       pretty:true
     }))
@@ -23,7 +26,11 @@ gulp.task('pug', function() { // Declare task
 gulp.task('sass', function(cb) {
   gulp.src('src/sass/main.scss')
     .pipe(bulkSass())
-    .pipe(sass()) // Using gulp-sass
+    .pipe(sass()) // using gulp-sass
+    .pipe(postcss([ // everytime sass runs it requires postcss before creating a new .css
+        require('postcss-import'),
+        require('autoprefixer')
+      ]))
     .pipe(gulp.dest('build/css'))
 	cb(); // !Callback way to finish task
 });
@@ -46,6 +53,7 @@ gulp.task('watch', function() {
   gulp.watch('src/pug/**/*.pug', gulp.series('pug'));
   gulp.watch('src/blocks/**/*.pug', gulp.series('pug'));
   gulp.watch('src/img/*', gulp.series('compress'));
+  gulp.watch('build/css/main.css', gulp.series('css'));
 });
 
 // Cleaning folder before compress
@@ -68,3 +76,14 @@ gulp.task('default', gulp.series(
   'sass', 'pug', 'clean', 'compress',
   gulp.parallel('watch', 'serve')
 ));
+
+// Postcss task
+gulp.task('css', function() {
+  var plugin = [ 
+    cssimport(),
+    autoprefixer()
+  ];
+    gulp.src('build/css/main.css')
+      .pipe(postcss(plugin))
+      .pipe(gulp.dest('build/css/'))
+});

@@ -1,0 +1,27 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+@font-face {
+	font-family: 'terminalregular';
+	src: url('../fonts/terminal-webfont.woff2') format('woff2'),
+		 url('../fonts/terminal-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'monacoregular';
+	src: url('../fonts/monaco-webfont.woff2') format('woff2'),
+		 url('../fonts/monaco-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'bitstream_vera_sans_monoroman';
+	src: url('bitstream-vera-sans-mono_allfont.ru-webfont.woff2') format('woff2'),
+		 url('bitstream-vera-sans-mono_allfont.ru-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
