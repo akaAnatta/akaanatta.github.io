@@ -35,7 +35,7 @@ body {
 	font-family: 'Bitstream Vera Sans Mono', 'Monaco';
 	font-size: 1rem;
 	line-height: 1.5;
-	background: #151515 url("../img/bg.jpg");
+	background: url("../img/bg.jpg") #151515 ;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
