@@ -1,1 +1,4 @@
-@import url(../../node_modules/normalize.css/normalize.css);
+@import '../../node_modules/normalize.css/normalize.css';
+@import 'base/fonts';
+@import 'base/basic';
+@import '../blocks/**/*.scss';
