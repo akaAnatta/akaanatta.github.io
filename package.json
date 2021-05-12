@@ -28,7 +28,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-sass-bulk-import": "^1.0.1",
     "normalize.css": "^8.0.1",
-    "postcss": "^7.0.27",
+    "postcss": "^8.2.10",
     "postcss-import": "^12.0.1"
   },
   "dependencies": {}
